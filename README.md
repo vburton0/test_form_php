@@ -10,7 +10,7 @@ Mise en place de l'envoie de mail avec un serveur SMTP :
 
 https://learn.microsoft.com/fr-fr/iis/application-frameworks/install-and-configure-php-on-iis/configure-smtp-e-mail-in-iis-7-and-above
 
-<header> Php-exs</header>
+<header> PHP-EWS  </header>
 
 Installer une lib php ce fait grace a composer : il faut donc telecherger composer sur votre appareil. Ensuite vous pourrez telecherger des package sur le site packagiste. Cela est tres utiles pour gagner du temps car enormement de developpeur Php partage leurs package.
 
