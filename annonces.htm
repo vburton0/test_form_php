@@ -106,7 +106,7 @@
           <div class="container-fluid text-center pt-4 pb-4">
             <div class="container">
                 <div class="container-fluid">
-                    <form action="traitement.php" method="post">
+                    <form action="traitement.php" method="post" enctype="multipart/form-data">
                         <div class="form-row mb-4">
                             <div class="col-md-6"> 
                                 <input type="text" class="form-control" id="nom" placeholder="Nom" name="nom" required>
@@ -120,7 +120,7 @@
                         </div>
 						<div class="form-row mb-4">
                             <div class="col-md-6"> 
-                                <input type="text" class="form-control" id="nom" placeholder="Code Postal" name="Code Postal" required>
+                                <input type="text" class="form-control" id="nom" placeholder="Code Postal" name="Code_Postal" required>
                             </div>
                             <div class="col-md-6">
                                 <input type="text" class="form-control" id="prenom" placeholder="Ville" name="Ville" required>
@@ -157,10 +157,17 @@
                         <div class="form-group">
                             <textarea class="form-control" id="message" rows="5" placeholder="Message" name="message"></textarea>
                         </div><br>
+                        <div>
+                        <label for="question_oui_non">Connaissez-vous l'un des membres de notre personnel ?</label>
+                            <input type="radio" name="reponse_oui_non" value="oui" id="oui" required>
+                            <label for="oui">Oui</label>
+                            <input type="radio" name="reponse_oui_non" value="non" id="non">
+                            <label for="non">Non</label>
+                        </div><br>
                         <label for="file">Votre CV (PDF, DOC, DOCX) :</label>
-                        <input type="file" name="cv" id="cv" accept=".pdf, .doc, .docx"> <!-- Limitez les types de fichiers acceptés si nécessaire -->
+                        <input type="file" name="CV" accept=".pdf, .doc, .docx"> <!-- Limitez les types de fichiers acceptés si nécessaire -->
                         <br>
-                        <button class="btn font-weight-bold bg-warning center-block text-uppercase" type="submit" id="submit_ajout_dbt" name="submit_ajout_dbt">Envoyer</button>
+                        <button class="btn font-weight-bold bg-warning center-block text-uppercase" type="submit" id="submit_ajout_dbt" name="submit_ajout_dbt" value="Téléverser">Envoyer</button>
                     </form>
                     <br>
                 </div>
@@ -176,4 +183,7 @@
     </div>
 </body>
 </html>
+
+
+
 
